@@ -19,18 +19,20 @@ public class Homework {
 
     public static Integer findSecondMaxElement(int[] arr) {      // Необходимо найти элемент, который меньше максимума, но больше всех остальных.
         int max = arr[0];
-        int SecondMax = arr[0];
+        int secondMax = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
             }
         }
         for (int i = 1; i < arr.length; i++) {
-            if (SecondMax < arr[i] && SecondMax < max) {
-                SecondMax = arr[i];
+            if ((arr[i]>secondMax) && (arr[i] != max)) {
+                secondMax = arr[i];
+
+                System.out.println(max+" "+secondMax);
             }
         }
-        return SecondMax;
+        return secondMax;
     }
 
     public static Integer lengthOfLastWord(String string) {// Найти длину последнего слова в строке. В строке только буквы и пробелы.
