@@ -1,8 +1,5 @@
 package com.aston.MyArrayList;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 
 /**
@@ -42,7 +39,7 @@ public class MainTest {
         myArryList2.add(2);
         myArryList2.add(9);
         myArryList2.add(8);
-        myArryList2.add(2);
+        myArryList2.add(3);
         myArryList2.add(5);
         myArryList2.print();
         MyCollections.sort(myArryList2, Comparator.naturalOrder());
@@ -59,7 +56,7 @@ public class MainTest {
          */
 
 
-        MyArryList myArryList3 = new MyArryList<>();
+        MyArryList<Object> myArryList3 = new MyArryList<>();
         myArryList3.add("Привет! ");
         myArryList3.add("Меня ");
         myArryList3.add("зовут ");

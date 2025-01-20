@@ -99,8 +99,7 @@ public class MyArryList <T> implements MyList<T>{
 
     @Override
     public int size() {
-        int newsize=size;
-        return newsize;
+        return size;
     }
 
     @Override
